@@ -3,7 +3,7 @@
 use Workerman\Worker;
 require_once __DIR__ . '/vendor/autoload.php';
 
-$wsWorker = new Worker('websocket://31.128.42.42:2346');
+$wsWorker = new Worker('websocket://0.0.0.0:2346');
 $wsWorker ->count = 4;
 
 $wsWorker->onConnect = function ($connection) {
